@@ -1,2 +1,19 @@
+
+
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+fecha_actual <%= Time.now %>
+
+<%if Time.now.year >=2023 %>
+   <p> Version 2.0 </p>
+<%else %>
+   <p> Version 2.1 </p>
+<%end %>
+
+<hr>
+<p> Aqui estoy cargando imagen con helper imagentag </p>
+
+<%= image_tag "imagendemo.png" %>
+
+
